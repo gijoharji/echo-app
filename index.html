@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Echo App</title>
+</head>
+<body>
+  <h2>Echo Web App</h2>
+  <input type="text" id="userInput" placeholder="Type something..." />
+  <button onclick="echoInput()">Submit</button>
+  <p id="output"></p>
+
+  <script>
+    function echoInput() {
+      const input = document.getElementById("userInput").value;
+      document.getElementById("output").innerText = "You entered: " + input;
+    }
+  </script>
+</body>
+</html>
